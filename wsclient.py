@@ -10,7 +10,7 @@ i = 0
 nrOfMessages = 200
  
 while i<nrOfMessages:
-    ws.send("message nr: " + str(i))
+    ws.send("$PWPEQ,ZDA,GGA,XFA,XDF,POVER*30")
     result = ws.recv()
     print(result)
     i=i+1
